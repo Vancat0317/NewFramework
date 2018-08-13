@@ -54,9 +54,6 @@ public class MainActivity extends BaseCompatActivity implements HomeRootFragment
      */
     @Override
     protected void initView(Bundle savedInstanceState) {
-        nvMenu = findViewById(R.id.nv_menu);
-        bvivBar = findViewById(R.id.bviv_bar);
-        dlRoot = findViewById(R.id.dl_root);
 
         if (savedInstanceState == null) {
             mFragments[FIRST] = HomeRootFragment.newInstance();
