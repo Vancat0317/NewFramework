@@ -1,17 +1,12 @@
 package com.vancat.newframework.ui.fragments.person.child;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.vancat.newframework.R;
 import com.vancat.newframework.ui.base.BaseMVPCompatFragment;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -21,7 +16,6 @@ public class PersonalUpperFragment extends BaseMVPCompatFragment {
 
     @BindView(R.id.civ_head)
     CircleImageView civHead;
-    Unbinder unbinder;
 
     public static PersonalUpperFragment newInstance() {
         Bundle args = new Bundle();

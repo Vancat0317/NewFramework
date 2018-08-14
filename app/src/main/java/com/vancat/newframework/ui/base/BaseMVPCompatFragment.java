@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Toast;
 
-import com.vancat.newframework.presenter.BasePresenter;
+import com.vancat.newframework.contract.book.BookMainContract;
 import com.vancat.newframework.utils.ToastUtils;
 
 import me.yokeyword.fragmentation.SupportFragment;
@@ -15,7 +15,7 @@ import me.yokeyword.fragmentation.SupportFragment;
 /**
  * Created by Vancat on 2018/8/10
  */
-public class BaseMVPCompatFragment<P extends BasePresenter> extends BaseCompatFragment implements IBaseFragment {
+public class BaseMVPCompatFragment<P extends BasePresenter> extends BaseCompatFragment<BasePresenter<BookMainContract.IBookMainModel, BookMainContract.IBookMainView>> implements IBaseFragment {
 
     public P mPresenter;
 

@@ -2,8 +2,6 @@ package com.vancat.newframework.ui.base;
 
 import android.support.annotation.NonNull;
 
-import com.vancat.newframework.presenter.BasePresenter;
-
 /**
  * Created by Vancat on 2018/8/10
  */

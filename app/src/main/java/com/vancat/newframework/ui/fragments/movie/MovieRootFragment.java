@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.vancat.newframework.R;
+import com.vancat.newframework.contract.book.BookMainContract;
+import com.vancat.newframework.ui.base.BasePresenter;
 import com.vancat.newframework.ui.base.BaseCompatFragment;
 
 import me.yokeyword.fragmentation.SupportFragment;
@@ -12,7 +14,7 @@ import me.yokeyword.fragmentation.SupportFragment;
 /**
  * Created by Vancat on 2018/8/10
  */
-public class MovieRootFragment extends BaseCompatFragment {
+public class MovieRootFragment extends BaseCompatFragment<BasePresenter<BookMainContract.IBookMainModel, BookMainContract.IBookMainView>> {
 
     public static SupportFragment newInstance() {
         Bundle args = new Bundle();

@@ -1,4 +1,4 @@
-package com.vancat.newframework.presenter;
+package com.vancat.newframework.ui.base;
 
 import android.support.annotation.NonNull;
 

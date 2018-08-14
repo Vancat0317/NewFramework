@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.vancat.newframework.contract.book.BookMainContract;
 import com.vancat.newframework.global.GlobalApplication;
 import com.vancat.newframework.ui.widgets.WaitProgressDialog;
 import com.vancat.newframework.utils.AppUtils;
@@ -23,7 +24,7 @@ import me.yokeyword.fragmentation.SupportFragment;
  *
  *
  */
-public abstract class BaseCompatFragment extends SupportFragment {
+public abstract class BaseCompatFragment<B extends BasePresenter<BookMainContract.IBookMainModel, BookMainContract.IBookMainView>> extends SupportFragment {
 
     protected String TAG;
     protected Context mContext;

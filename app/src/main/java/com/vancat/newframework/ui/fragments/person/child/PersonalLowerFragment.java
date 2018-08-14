@@ -1,18 +1,20 @@
 package com.vancat.newframework.ui.fragments.person.child;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.vancat.newframework.R;
+import com.vancat.newframework.ui.activity.AboutActivity;
 import com.vancat.newframework.ui.base.BaseMVPCompatFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
@@ -40,5 +42,17 @@ public class PersonalLowerFragment extends BaseMVPCompatFragment {
 
     @Override
     public void initUI(View view, @Nullable Bundle savedInstanceState) {
+    }
+
+    @OnClick({R.id.tv_btn_settings, R.id.tv_btn_about})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.tv_btn_settings:
+//                start(PersonalSettingFragment.newInstance());
+                break;
+            case R.id.tv_btn_about:
+                startActivity(new Intent(mActivity, AboutActivity.class));
+                break;
+        }
     }
 }
